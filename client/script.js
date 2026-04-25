@@ -63,3 +63,34 @@ if (downloadButton) {
         }, 250);
     });
 }
+
+const revealTargets = document.querySelectorAll(
+    '.hero-copy, .hero-visual, .service-chip, .about-copy, .about-card, .site-footer'
+);
+
+if (revealTargets.length > 0) {
+    revealTargets.forEach((element, index) => {
+        element.classList.add('scroll-reveal');
+        const delayStep = (index % 4) * 70;
+        element.style.transitionDelay = `${delayStep}ms`;
+    });
+
+    const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.16,
+            rootMargin: '0px 0px -8% 0px'
+        }
+    );
+
+    revealTargets.forEach((element) => {
+        revealObserver.observe(element);
+    });
+}
