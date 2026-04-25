@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saven Laundry | Download App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container navbar">
+            <div class="logo">
+                <img src="assets/logo.jpg" class="site-logo" alt="Saven Laundry">
+            </div>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#download" class="nav-link nav-link-cta">Download</a>
+            </nav>
+        </div>
+        <button class="nav-backdrop" type="button" aria-label="Close navigation menu" hidden></button>
+    </header>
+
+    <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Mobile Laundry Made Simple</span>
+                    <h1 id="hero-title">Saven Laundry brings pickup, washing, folding, and delivery into one clean app.</h1>
+                    <p>Book a service in seconds, track every step with confidence, and keep your routine moving with a polished mobile experience built for convenience.</p>
+
+                    <div class="cta-row" id="download">
+                        <a href="saven-laundry.apk" class="btn-primary" download>
+                            <i class="fa-solid fa-download"></i>
+                            Download APK
+                        </a>
+                        <a href="#preview" class="btn-secondary">See app preview</a>
+                    </div>
+
+                    <div class="service-strip" aria-label="Laundry services">
+                        <div class="service-chip">
+                            <div>
+                                <strong>Washing</strong>
+                                <span>Fresh, reliable wash cycles</span>
+                            </div>
+                        </div>
+                        <div class="service-chip">
+                            <div>
+                                <strong>Folding</strong>
+                                <span>Neat, organized folding</span>
+                            </div>
+                        </div>
+                        <div class="service-chip">
+                            <div>
+                                <strong>Pickup &amp; Delivery</strong>
+                                <span>Fast service to your doorstep</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" id="preview">
+                    <div class="mockup-shell">
+                        <div class="mockup-topbar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="mockup-screen">
+                            <div class="mockup-brand">
+                                <img src="assets/logo.jpg" class="preview-logo" alt="Saven Laundry logo">
+                                <div>
+                                    <h2>Welcome back</h2>
+                                    <p>Sign in to manage your laundry orders</p>
+                                </div>
+                            </div>
+
+                            <div class="mockup-art">
+                                <div class="login-card">
+                                    <div class="input-line short"></div>
+                                    <div class="input-line"></div>
+                                    <div class="login-row">
+                                        <span class="remember-dot"></span>
+                                        <span>Remember me</span>
+                                    </div>
+                                    <button type="button">Sign In</button>
+                                </div>
+                            </div>
+
+                            <div class="mockup-footer">
+                                <div>
+                                    <strong>4.9</strong>
+                                    <span>Rated by customers</span>
+                                </div>
+                                <div>
+                                    <strong>24h</strong>
+                                    <span>Fast delivery support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div class="about-copy">
+                    <h2 id="about-title">About Saven Laundry</h2>
+                    <p>Saven Laundry is a modern laundry service app designed for busy households, students, and professionals. Schedule pickups, monitor every order in real time, and get your clothes delivered fresh and folded with zero hassle.</p>
+                </div>
+
+                <div class="about-points" aria-label="Core benefits">
+                    <article class="about-card">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>On-time Service</h3>
+                        <p>Reliable pickup and return windows that fit your schedule.</p>
+                    </article>
+                    <article class="about-card">
+                        <i class="fa-solid fa-shield"></i>
+                        <h3>Trusted Care</h3>
+                        <p>Careful handling and quality checks from wash to fold.</p>
+                    </article>
+                    <article class="about-card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Easy Tracking</h3>
+                        <p>Track status updates directly in the app from pickup to delivery.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 Saven Laundry. All rights reserved.</p>
+            <a href="#home">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
